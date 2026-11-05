@@ -3,6 +3,14 @@
 All notable changes to lib-plugins. Versions follow [Semantic Versioning](https://semver.org/)
 (0.x releases may change anything).
 
+## [0.1.3]
+
+### Changed
+- `plugins-contexts`: a snapshot is never taken over a copy still waiting to be taken in. A copy the adapter
+  deferred (the app was open) holds the handheld's changes the app has not got, so `refresh` takes no snapshot
+  while a copy is pending, and the copy is delivered first. From droidtop-agent 5222686, which landed in
+  droidtop-agent's copy of this crate after it moved here.
+
 ## [0.1.2]
 
 ### Changed
