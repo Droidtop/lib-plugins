@@ -3,6 +3,18 @@
 All notable changes to lib-plugins. Versions follow [Semantic Versioning](https://semver.org/)
 (in 0.x, only a new minor version may break the interface; CI's `semver` job enforces it).
 
+## [0.2.2]
+
+### Added
+- `ui-data`, a plain-JVM Kotlin module: the catalog model droidtop's settings and pages are built from, moved from
+  droidtop runtime-common's `dev.droidtop.library.settings` (`SettingsCatalog.kt`, `Notice.kt`, `CatalogPage.kt`,
+  `JobLook.kt`, `StatusMark.kt`, `NoticeDialogs.kt`), generic over the host [H] its callbacks are handed, so the shared
+  UI can draw it without droidtop (Droidtop/tracker#867, ui-shared step 3). What only one host can show (droidtop's
+  folder and document pickers, Launcher3's settings) extends the new `PlatformItem`; `NestedScreenItem.resolve` takes the
+  host's registry of screens. droidtop's tests of this code (`NoticeTest`, `NoticeDialogsTest`) moved with it, run through
+  typealiases over a host as droidtop will use them; `CatalogTest` is new. Its API is checked in
+  (`ui-data/api/ui-data.api`), and CI's `kotlin` job holds the code to it.
+
 ## [0.2.1]
 
 ### Added

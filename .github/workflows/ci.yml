@@ -47,6 +47,24 @@ jobs:
         if: success() || failure()
         run: cargo test --workspace --no-fail-fast
 
+  # The Kotlin modules (ui-data): their tests, their public API against its dump, and no API removed since the last
+  # release without a breaking version (Droidtop/tracker#867, owner 2026-11-04: "I should be able to bump the version
+  # number and immediately get the benefit").
+  kotlin:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+        with:
+          fetch-depth: 0
+          persist-credentials: false
+      - uses: actions/setup-java@cf277c60eb25467037889841efdb72551f06f6c3 # v4
+        with:
+          distribution: temurin
+          java-version: 17
+      - uses: gradle/actions/setup-gradle@ed408507eac070d1f99cc633dbcf757c94c7933a # v4
+      - run: ./gradlew test apiCheck --stacktrace
+      - run: scripts/check-api-compat.sh
+
   # The plugin host's Android interface (android/aidl) compiles with the SDK's aidl tool, as an app's build would.
   aidl:
     runs-on: ubuntu-24.04
@@ -136,7 +154,7 @@ jobs:
   # in the root Cargo.toml (and the CHANGELOG) in the change that needs it.
   release:
     if: github.event_name == 'push' && github.ref == 'refs/heads/main'
-    needs: [test, aidl, droidtop-agent, semver]
+    needs: [test, aidl, droidtop-agent, semver, kotlin]
     runs-on: ubuntu-24.04
     permissions:
       contents: write
