@@ -6,6 +6,7 @@ each program has its own scaffold and pins a tagged release of each library it u
 | Part | Where | Holds |
 |---|---|---|
 | `plugins-contexts` | [`crates/contexts`](crates/contexts) | context adapters: the programs plugins publish to sync their supporting state, offered, approved, installed and run |
+| `ui-data` (Kotlin, plain JVM) | [`ui-data`](ui-data) | the catalog model a host's screens are built from (`CatalogScreen`, `CatalogGroup`, the `CatalogItem` kinds, `Notice`, the page model, `NoticeDialogs`), generic over the host its callbacks are handed: the plugin API's UI-as-data in a host's in-process form. droidtop keeps its names as typealiases over `Context` |
 | AIDL (Android only) | [`android/aidl`](android/README.md) | the plugin host's Android interface: `IPluginRuntime`, `IPluginRuntimeCallback`, `IPluginHostBroker`, `IAppInterfaceDoor` |
 
 Used by: droidtop-agent (and through it droidtop) for the crate; droidtop and Enginehost for the AIDL, once each

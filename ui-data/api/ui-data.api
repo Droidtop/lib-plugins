@@ -1,0 +1,604 @@
+public final class dev/droidtop/lib/plugins/ui/ActionItem : dev/droidtop/lib/plugins/ui/CatalogItem {
+	public static final field Companion Ldev/droidtop/lib/plugins/ui/ActionItem$Companion;
+	public fun <init> (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ldev/droidtop/lib/plugins/ui/CatalogIcon;Ljava/lang/Boolean;Ljava/lang/Float;Ldev/droidtop/lib/plugins/ui/JobLook;ILdev/droidtop/lib/plugins/ui/StatusMark;Ldev/droidtop/lib/plugins/ui/RowTag;Ljava/lang/String;Ljava/lang/String;Lkotlin/jvm/functions/Function1;Z)V
+	public synthetic fun <init> (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ldev/droidtop/lib/plugins/ui/CatalogIcon;Ljava/lang/Boolean;Ljava/lang/Float;Ldev/droidtop/lib/plugins/ui/JobLook;ILdev/droidtop/lib/plugins/ui/StatusMark;Ldev/droidtop/lib/plugins/ui/RowTag;Ljava/lang/String;Ljava/lang/String;Lkotlin/jvm/functions/Function1;ZILkotlin/jvm/internal/DefaultConstructorMarker;)V
+	public fun getChip ()Ldev/droidtop/lib/plugins/ui/RowTag;
+	public final fun getConfirmKeep ()Ljava/lang/String;
+	public final fun getConfirmTitle ()Ljava/lang/String;
+	public fun getIcon ()Ldev/droidtop/lib/plugins/ui/CatalogIcon;
+	public fun getIconFile ()Ljava/lang/String;
+	public fun getId ()Ljava/lang/String;
+	public final fun getInert ()Z
+	public final fun getLeaves ()Z
+	public fun getProgress ()Ljava/lang/Float;
+	public fun getProgressLook ()Ldev/droidtop/lib/plugins/ui/JobLook;
+	public fun getProgressParts ()I
+	public final fun getRun ()Lkotlin/jvm/functions/Function1;
+	public final fun getState ()Ljava/lang/Boolean;
+	public fun getStatusMark ()Ldev/droidtop/lib/plugins/ui/StatusMark;
+	public fun getSubtitle ()Ljava/lang/String;
+	public fun getSummaryShown ()Z
+	public fun getTitle ()Ljava/lang/String;
+	public fun getValue ()Ljava/lang/String;
+}
+
+public final class dev/droidtop/lib/plugins/ui/ActionItem$Companion {
+}
+
+public final class dev/droidtop/lib/plugins/ui/AsyncActionItem : dev/droidtop/lib/plugins/ui/CatalogItem {
+	public fun <init> (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ldev/droidtop/lib/plugins/ui/RowTag;Ldev/droidtop/lib/plugins/ui/StatusMark;Ljava/lang/String;Ljava/lang/String;Lkotlin/jvm/functions/Function3;)V
+	public synthetic fun <init> (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ldev/droidtop/lib/plugins/ui/RowTag;Ldev/droidtop/lib/plugins/ui/StatusMark;Ljava/lang/String;Ljava/lang/String;Lkotlin/jvm/functions/Function3;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
+	public fun getChip ()Ldev/droidtop/lib/plugins/ui/RowTag;
+	public final fun getConfirmKeep ()Ljava/lang/String;
+	public final fun getConfirmTitle ()Ljava/lang/String;
+	public final fun getGate ()Ljava/lang/String;
+	public fun getIcon ()Ldev/droidtop/lib/plugins/ui/CatalogIcon;
+	public fun getIconFile ()Ljava/lang/String;
+	public fun getId ()Ljava/lang/String;
+	public fun getProgress ()Ljava/lang/Float;
+	public fun getProgressLook ()Ldev/droidtop/lib/plugins/ui/JobLook;
+	public fun getProgressParts ()I
+	public final fun getRun ()Lkotlin/jvm/functions/Function3;
+	public fun getStatusMark ()Ldev/droidtop/lib/plugins/ui/StatusMark;
+	public fun getSubtitle ()Ljava/lang/String;
+	public fun getSummaryShown ()Z
+	public fun getTitle ()Ljava/lang/String;
+	public fun getValue ()Ljava/lang/String;
+}
+
+public final class dev/droidtop/lib/plugins/ui/ButtonBarItem : dev/droidtop/lib/plugins/ui/CatalogItem {
+	public static final field Companion Ldev/droidtop/lib/plugins/ui/ButtonBarItem$Companion;
+	public static final field ID Ljava/lang/String;
+	public static final field MAX_BUTTONS I
+	public static final field MORE_LABEL Ljava/lang/String;
+	public fun <init> (Ljava/util/List;Ljava/util/List;)V
+	public synthetic fun <init> (Ljava/util/List;Ljava/util/List;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
+	public final fun getButtons ()Ljava/util/List;
+	public fun getChip ()Ldev/droidtop/lib/plugins/ui/RowTag;
+	public fun getIcon ()Ldev/droidtop/lib/plugins/ui/CatalogIcon;
+	public fun getIconFile ()Ljava/lang/String;
+	public fun getId ()Ljava/lang/String;
+	public final fun getMore ()Ljava/util/List;
+	public fun getProgress ()Ljava/lang/Float;
+	public fun getProgressLook ()Ldev/droidtop/lib/plugins/ui/JobLook;
+	public fun getProgressParts ()I
+	public final fun getSlots ()Ljava/util/List;
+	public fun getStatusMark ()Ldev/droidtop/lib/plugins/ui/StatusMark;
+	public fun getSubtitle ()Ljava/lang/String;
+	public fun getSummaryShown ()Z
+	public fun getTitle ()Ljava/lang/String;
+	public fun getValue ()Ljava/lang/String;
+	public final fun initialSlot ()I
+}
+
+public final class dev/droidtop/lib/plugins/ui/ButtonBarItem$Companion {
+}
+
+public final class dev/droidtop/lib/plugins/ui/ButtonRole : java/lang/Enum {
+	public static final field DANGER Ldev/droidtop/lib/plugins/ui/ButtonRole;
+	public static final field PRIMARY Ldev/droidtop/lib/plugins/ui/ButtonRole;
+	public static final field SECONDARY Ldev/droidtop/lib/plugins/ui/ButtonRole;
+	public static fun getEntries ()Lkotlin/enums/EnumEntries;
+	public static fun valueOf (Ljava/lang/String;)Ldev/droidtop/lib/plugins/ui/ButtonRole;
+	public static fun values ()[Ldev/droidtop/lib/plugins/ui/ButtonRole;
+}
+
+public final class dev/droidtop/lib/plugins/ui/CatalogChip {
+	public fun <init> (Ljava/lang/String;Z)V
+	public synthetic fun <init> (Ljava/lang/String;ZILkotlin/jvm/internal/DefaultConstructorMarker;)V
+	public final fun component1 ()Ljava/lang/String;
+	public final fun component2 ()Z
+	public final fun copy (Ljava/lang/String;Z)Ldev/droidtop/lib/plugins/ui/CatalogChip;
+	public static synthetic fun copy$default (Ldev/droidtop/lib/plugins/ui/CatalogChip;Ljava/lang/String;ZILjava/lang/Object;)Ldev/droidtop/lib/plugins/ui/CatalogChip;
+	public fun equals (Ljava/lang/Object;)Z
+	public final fun getLabel ()Ljava/lang/String;
+	public final fun getOk ()Z
+	public fun hashCode ()I
+	public fun toString ()Ljava/lang/String;
+}
+
+public final class dev/droidtop/lib/plugins/ui/CatalogGroup {
+	public fun <init> (Ljava/lang/String;Ljava/lang/String;Ljava/util/List;ZLdev/droidtop/lib/plugins/ui/CatalogIcon;Ljava/lang/String;Ljava/util/List;)V
+	public synthetic fun <init> (Ljava/lang/String;Ljava/lang/String;Ljava/util/List;ZLdev/droidtop/lib/plugins/ui/CatalogIcon;Ljava/lang/String;Ljava/util/List;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
+	public final fun component1 ()Ljava/lang/String;
+	public final fun component2 ()Ljava/lang/String;
+	public final fun component3 ()Ljava/util/List;
+	public final fun component4 ()Z
+	public final fun component5 ()Ldev/droidtop/lib/plugins/ui/CatalogIcon;
+	public final fun component6 ()Ljava/lang/String;
+	public final fun component7 ()Ljava/util/List;
+	public final fun copy (Ljava/lang/String;Ljava/lang/String;Ljava/util/List;ZLdev/droidtop/lib/plugins/ui/CatalogIcon;Ljava/lang/String;Ljava/util/List;)Ldev/droidtop/lib/plugins/ui/CatalogGroup;
+	public static synthetic fun copy$default (Ldev/droidtop/lib/plugins/ui/CatalogGroup;Ljava/lang/String;Ljava/lang/String;Ljava/util/List;ZLdev/droidtop/lib/plugins/ui/CatalogIcon;Ljava/lang/String;Ljava/util/List;ILjava/lang/Object;)Ldev/droidtop/lib/plugins/ui/CatalogGroup;
+	public fun equals (Ljava/lang/Object;)Z
+	public final fun getCategory ()Ljava/lang/String;
+	public final fun getChips ()Ljava/util/List;
+	public final fun getIcon ()Ldev/droidtop/lib/plugins/ui/CatalogIcon;
+	public final fun getId ()Ljava/lang/String;
+	public final fun getItems ()Ljava/util/List;
+	public final fun getQuickOnly ()Z
+	public final fun getTitle ()Ljava/lang/String;
+	public fun hashCode ()I
+	public fun toString ()Ljava/lang/String;
+}
+
+public final class dev/droidtop/lib/plugins/ui/CatalogIcon : java/lang/Enum {
+	public static final field ANDROID_SETTINGS Ldev/droidtop/lib/plugins/ui/CatalogIcon;
+	public static final field APPEARANCE Ldev/droidtop/lib/plugins/ui/CatalogIcon;
+	public static final field CONSOLE_SYSTEMS Ldev/droidtop/lib/plugins/ui/CatalogIcon;
+	public static final field CONTAINERS Ldev/droidtop/lib/plugins/ui/CatalogIcon;
+	public static final field CONTROLLER Ldev/droidtop/lib/plugins/ui/CatalogIcon;
+	public static final field DATA Ldev/droidtop/lib/plugins/ui/CatalogIcon;
+	public static final field DESKTOP Ldev/droidtop/lib/plugins/ui/CatalogIcon;
+	public static final field DISPLAY Ldev/droidtop/lib/plugins/ui/CatalogIcon;
+	public static final field ENGINEHOST Ldev/droidtop/lib/plugins/ui/CatalogIcon;
+	public static final field GAME_FOLDERS Ldev/droidtop/lib/plugins/ui/CatalogIcon;
+	public static final field GAMING Ldev/droidtop/lib/plugins/ui/CatalogIcon;
+	public static final field GLOBAL Ldev/droidtop/lib/plugins/ui/CatalogIcon;
+	public static final field HOME_ROLE Ldev/droidtop/lib/plugins/ui/CatalogIcon;
+	public static final field INPUT Ldev/droidtop/lib/plugins/ui/CatalogIcon;
+	public static final field INTEGRATIONS Ldev/droidtop/lib/plugins/ui/CatalogIcon;
+	public static final field KEYBOARD Ldev/droidtop/lib/plugins/ui/CatalogIcon;
+	public static final field LIBRARY Ldev/droidtop/lib/plugins/ui/CatalogIcon;
+	public static final field MODES Ldev/droidtop/lib/plugins/ui/CatalogIcon;
+	public static final field ORPHANED_MEDIA Ldev/droidtop/lib/plugins/ui/CatalogIcon;
+	public static final field PLATFORMS Ldev/droidtop/lib/plugins/ui/CatalogIcon;
+	public static final field SCRAPER Ldev/droidtop/lib/plugins/ui/CatalogIcon;
+	public static final field SCREENSAVER Ldev/droidtop/lib/plugins/ui/CatalogIcon;
+	public static final field SEARCH Ldev/droidtop/lib/plugins/ui/CatalogIcon;
+	public static final field STANDARD Ldev/droidtop/lib/plugins/ui/CatalogIcon;
+	public static final field SYSTEM_UPDATES Ldev/droidtop/lib/plugins/ui/CatalogIcon;
+	public static final field THEME Ldev/droidtop/lib/plugins/ui/CatalogIcon;
+	public static final field WINDOWS_GAMES Ldev/droidtop/lib/plugins/ui/CatalogIcon;
+	public static fun getEntries ()Lkotlin/enums/EnumEntries;
+	public static fun valueOf (Ljava/lang/String;)Ldev/droidtop/lib/plugins/ui/CatalogIcon;
+	public static fun values ()[Ldev/droidtop/lib/plugins/ui/CatalogIcon;
+}
+
+public abstract interface class dev/droidtop/lib/plugins/ui/CatalogItem {
+	public fun getChip ()Ldev/droidtop/lib/plugins/ui/RowTag;
+	public fun getIcon ()Ldev/droidtop/lib/plugins/ui/CatalogIcon;
+	public fun getIconFile ()Ljava/lang/String;
+	public abstract fun getId ()Ljava/lang/String;
+	public fun getProgress ()Ljava/lang/Float;
+	public fun getProgressLook ()Ldev/droidtop/lib/plugins/ui/JobLook;
+	public fun getProgressParts ()I
+	public fun getStatusMark ()Ldev/droidtop/lib/plugins/ui/StatusMark;
+	public abstract fun getSubtitle ()Ljava/lang/String;
+	public fun getSummaryShown ()Z
+	public abstract fun getTitle ()Ljava/lang/String;
+	public fun getValue ()Ljava/lang/String;
+}
+
+public final class dev/droidtop/lib/plugins/ui/CatalogItem$DefaultImpls {
+	public static fun getChip (Ldev/droidtop/lib/plugins/ui/CatalogItem;)Ldev/droidtop/lib/plugins/ui/RowTag;
+	public static fun getIcon (Ldev/droidtop/lib/plugins/ui/CatalogItem;)Ldev/droidtop/lib/plugins/ui/CatalogIcon;
+	public static fun getIconFile (Ldev/droidtop/lib/plugins/ui/CatalogItem;)Ljava/lang/String;
+	public static fun getProgress (Ldev/droidtop/lib/plugins/ui/CatalogItem;)Ljava/lang/Float;
+	public static fun getProgressLook (Ldev/droidtop/lib/plugins/ui/CatalogItem;)Ldev/droidtop/lib/plugins/ui/JobLook;
+	public static fun getProgressParts (Ldev/droidtop/lib/plugins/ui/CatalogItem;)I
+	public static fun getStatusMark (Ldev/droidtop/lib/plugins/ui/CatalogItem;)Ldev/droidtop/lib/plugins/ui/StatusMark;
+	public static fun getSummaryShown (Ldev/droidtop/lib/plugins/ui/CatalogItem;)Z
+	public static fun getValue (Ldev/droidtop/lib/plugins/ui/CatalogItem;)Ljava/lang/String;
+}
+
+public final class dev/droidtop/lib/plugins/ui/CatalogKt {
+	public static final fun getConfirmKeep (Ldev/droidtop/lib/plugins/ui/CatalogItem;)Ljava/lang/String;
+	public static final fun getConfirmText (Ldev/droidtop/lib/plugins/ui/CatalogItem;)Ljava/lang/String;
+	public static final fun isInert (Ldev/droidtop/lib/plugins/ui/CatalogItem;)Z
+}
+
+public final class dev/droidtop/lib/plugins/ui/CatalogLayout : java/lang/Enum {
+	public static final field CATEGORIES Ldev/droidtop/lib/plugins/ui/CatalogLayout;
+	public static final field LIST Ldev/droidtop/lib/plugins/ui/CatalogLayout;
+	public static final field STRIP Ldev/droidtop/lib/plugins/ui/CatalogLayout;
+	public static fun getEntries ()Lkotlin/enums/EnumEntries;
+	public static fun valueOf (Ljava/lang/String;)Ldev/droidtop/lib/plugins/ui/CatalogLayout;
+	public static fun values ()[Ldev/droidtop/lib/plugins/ui/CatalogLayout;
+}
+
+public final class dev/droidtop/lib/plugins/ui/CatalogPage {
+	public static final field Companion Ldev/droidtop/lib/plugins/ui/CatalogPage$Companion;
+	public static final field TOP_GROUP_ID Ljava/lang/String;
+	public fun <init> (Ldev/droidtop/lib/plugins/ui/PageHeader;Ljava/util/List;Ljava/util/List;Ljava/util/List;)V
+	public synthetic fun <init> (Ldev/droidtop/lib/plugins/ui/PageHeader;Ljava/util/List;Ljava/util/List;Ljava/util/List;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
+	public final fun asGroups ()Ljava/util/List;
+	public final fun getButtons ()Ljava/util/List;
+	public final fun getGroups ()Ljava/util/List;
+	public final fun getHeader ()Ldev/droidtop/lib/plugins/ui/PageHeader;
+	public final fun getMore ()Ljava/util/List;
+}
+
+public final class dev/droidtop/lib/plugins/ui/CatalogPage$Companion {
+}
+
+public final class dev/droidtop/lib/plugins/ui/CatalogPageKt {
+	public static final fun pageScreen (Ljava/lang/String;Ljava/lang/String;Ldev/droidtop/lib/plugins/ui/CatalogLayout;Lkotlin/jvm/functions/Function2;Lkotlin/jvm/functions/Function0;Lkotlinx/coroutines/flow/Flow;Lkotlin/jvm/functions/Function2;)Ldev/droidtop/lib/plugins/ui/CatalogScreen;
+	public static synthetic fun pageScreen$default (Ljava/lang/String;Ljava/lang/String;Ldev/droidtop/lib/plugins/ui/CatalogLayout;Lkotlin/jvm/functions/Function2;Lkotlin/jvm/functions/Function0;Lkotlinx/coroutines/flow/Flow;Lkotlin/jvm/functions/Function2;ILjava/lang/Object;)Ldev/droidtop/lib/plugins/ui/CatalogScreen;
+}
+
+public final class dev/droidtop/lib/plugins/ui/CatalogScreen {
+	public fun <init> (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lkotlin/jvm/functions/Function2;Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function2;ZLkotlin/jvm/functions/Function0;ZLjava/util/List;Lkotlinx/coroutines/flow/Flow;Ldev/droidtop/lib/plugins/ui/CatalogLayout;ZZLjava/lang/String;)V
+	public synthetic fun <init> (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lkotlin/jvm/functions/Function2;Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function2;ZLkotlin/jvm/functions/Function0;ZLjava/util/List;Lkotlinx/coroutines/flow/Flow;Ldev/droidtop/lib/plugins/ui/CatalogLayout;ZZLjava/lang/String;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
+	public final fun getCategoryOrder ()Ljava/util/List;
+	public final fun getForDeepLink ()Lkotlin/jvm/functions/Function1;
+	public final fun getGroups ()Lkotlin/jvm/functions/Function2;
+	public final fun getIconFile ()Ljava/lang/String;
+	public final fun getId ()Ljava/lang/String;
+	public final fun getIndexGroups ()Lkotlin/jvm/functions/Function2;
+	public final fun getIndexesItsPages ()Z
+	public final fun getLayout ()Ldev/droidtop/lib/plugins/ui/CatalogLayout;
+	public final fun getLive ()Lkotlinx/coroutines/flow/Flow;
+	public final fun getMerged ()Z
+	public final fun getNeedsNetwork ()Z
+	public final fun getOnLeave ()Lkotlin/jvm/functions/Function0;
+	public final fun getPanel ()Z
+	public final fun getSubtitle ()Ljava/lang/String;
+	public final fun getTitle ()Ljava/lang/String;
+}
+
+public final class dev/droidtop/lib/plugins/ui/ChoiceItem : dev/droidtop/lib/plugins/ui/CatalogItem {
+	public fun <init> (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/util/List;Ljava/lang/String;Lkotlin/jvm/functions/Function2;Ldev/droidtop/lib/plugins/ui/RowTag;)V
+	public synthetic fun <init> (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/util/List;Ljava/lang/String;Lkotlin/jvm/functions/Function2;Ldev/droidtop/lib/plugins/ui/RowTag;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
+	public final fun currentLabel ()Ljava/lang/String;
+	public final fun currentTone ()Ldev/droidtop/lib/plugins/ui/NoticeTone;
+	public fun getChip ()Ldev/droidtop/lib/plugins/ui/RowTag;
+	public final fun getCurrent ()Ljava/lang/String;
+	public fun getIcon ()Ldev/droidtop/lib/plugins/ui/CatalogIcon;
+	public fun getIconFile ()Ljava/lang/String;
+	public fun getId ()Ljava/lang/String;
+	public final fun getOnSelect ()Lkotlin/jvm/functions/Function2;
+	public final fun getOptions ()Ljava/util/List;
+	public fun getProgress ()Ljava/lang/Float;
+	public fun getProgressLook ()Ldev/droidtop/lib/plugins/ui/JobLook;
+	public fun getProgressParts ()I
+	public fun getStatusMark ()Ldev/droidtop/lib/plugins/ui/StatusMark;
+	public fun getSubtitle ()Ljava/lang/String;
+	public fun getSummaryShown ()Z
+	public fun getTitle ()Ljava/lang/String;
+	public final fun getToned ()Z
+	public fun getValue ()Ljava/lang/String;
+}
+
+public final class dev/droidtop/lib/plugins/ui/ChoiceOption {
+	public fun <init> (Ljava/lang/String;Ljava/lang/String;Ldev/droidtop/lib/plugins/ui/NoticeTone;)V
+	public synthetic fun <init> (Ljava/lang/String;Ljava/lang/String;Ldev/droidtop/lib/plugins/ui/NoticeTone;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
+	public final fun component1 ()Ljava/lang/String;
+	public final fun component2 ()Ljava/lang/String;
+	public final fun component3 ()Ldev/droidtop/lib/plugins/ui/NoticeTone;
+	public final fun copy (Ljava/lang/String;Ljava/lang/String;Ldev/droidtop/lib/plugins/ui/NoticeTone;)Ldev/droidtop/lib/plugins/ui/ChoiceOption;
+	public static synthetic fun copy$default (Ldev/droidtop/lib/plugins/ui/ChoiceOption;Ljava/lang/String;Ljava/lang/String;Ldev/droidtop/lib/plugins/ui/NoticeTone;ILjava/lang/Object;)Ldev/droidtop/lib/plugins/ui/ChoiceOption;
+	public fun equals (Ljava/lang/Object;)Z
+	public final fun getLabel ()Ljava/lang/String;
+	public final fun getTone ()Ldev/droidtop/lib/plugins/ui/NoticeTone;
+	public final fun getValue ()Ljava/lang/String;
+	public fun hashCode ()I
+	public fun toString ()Ljava/lang/String;
+}
+
+public final class dev/droidtop/lib/plugins/ui/ConfirmAnswer : java/lang/Enum {
+	public static final field Cancel Ldev/droidtop/lib/plugins/ui/ConfirmAnswer;
+	public static final field Proceed Ldev/droidtop/lib/plugins/ui/ConfirmAnswer;
+	public static fun getEntries ()Lkotlin/enums/EnumEntries;
+	public static fun valueOf (Ljava/lang/String;)Ldev/droidtop/lib/plugins/ui/ConfirmAnswer;
+	public static fun values ()[Ldev/droidtop/lib/plugins/ui/ConfirmAnswer;
+}
+
+public final class dev/droidtop/lib/plugins/ui/DangerConfirm {
+	public fun <init> (Ldev/droidtop/lib/plugins/ui/Notice;Ljava/lang/String;Ljava/util/List;Ljava/lang/String;)V
+	public synthetic fun <init> (Ldev/droidtop/lib/plugins/ui/Notice;Ljava/lang/String;Ljava/util/List;Ljava/lang/String;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
+	public final fun getCancelLabel ()Ljava/lang/String;
+	public final fun getItems ()Ljava/util/List;
+	public final fun getNotice ()Ldev/droidtop/lib/plugins/ui/Notice;
+	public final fun getProceedLabel ()Ljava/lang/String;
+}
+
+public final class dev/droidtop/lib/plugins/ui/JobLook : java/lang/Enum {
+	public static final field ACTIVE Ldev/droidtop/lib/plugins/ui/JobLook;
+	public static final field CHECKING Ldev/droidtop/lib/plugins/ui/JobLook;
+	public static final field Companion Ldev/droidtop/lib/plugins/ui/JobLook$Companion;
+	public static final field DONE Ldev/droidtop/lib/plugins/ui/JobLook;
+	public static final field FAILED Ldev/droidtop/lib/plugins/ui/JobLook;
+	public static final field LEVEL Ldev/droidtop/lib/plugins/ui/JobLook;
+	public static final field MAX_PARTS I
+	public static final field PAUSED Ldev/droidtop/lib/plugins/ui/JobLook;
+	public static final field QUEUED Ldev/droidtop/lib/plugins/ui/JobLook;
+	public static fun getEntries ()Lkotlin/enums/EnumEntries;
+	public static fun valueOf (Ljava/lang/String;)Ldev/droidtop/lib/plugins/ui/JobLook;
+	public static fun values ()[Ldev/droidtop/lib/plugins/ui/JobLook;
+}
+
+public final class dev/droidtop/lib/plugins/ui/JobLook$Companion {
+	public final fun of (Ljava/lang/Float;)Ldev/droidtop/lib/plugins/ui/JobLook;
+	public final fun words (Ldev/droidtop/lib/plugins/ui/JobLook;)Ljava/lang/String;
+}
+
+public final class dev/droidtop/lib/plugins/ui/NestedScreenItem : dev/droidtop/lib/plugins/ui/CatalogItem {
+	public fun <init> (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ldev/droidtop/lib/plugins/ui/CatalogScreen;Ljava/lang/String;Lkotlin/jvm/functions/Function1;Ljava/lang/Integer;Ldev/droidtop/lib/plugins/ui/CatalogIcon;Ljava/lang/Float;Ldev/droidtop/lib/plugins/ui/JobLook;ILdev/droidtop/lib/plugins/ui/StatusMark;Ldev/droidtop/lib/plugins/ui/RowTag;Ljava/lang/String;Z)V
+	public synthetic fun <init> (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ldev/droidtop/lib/plugins/ui/CatalogScreen;Ljava/lang/String;Lkotlin/jvm/functions/Function1;Ljava/lang/Integer;Ldev/droidtop/lib/plugins/ui/CatalogIcon;Ljava/lang/Float;Ldev/droidtop/lib/plugins/ui/JobLook;ILdev/droidtop/lib/plugins/ui/StatusMark;Ldev/droidtop/lib/plugins/ui/RowTag;Ljava/lang/String;ZILkotlin/jvm/internal/DefaultConstructorMarker;)V
+	public final fun getAccent ()Ljava/lang/Integer;
+	public fun getChip ()Ldev/droidtop/lib/plugins/ui/RowTag;
+	public fun getIcon ()Ldev/droidtop/lib/plugins/ui/CatalogIcon;
+	public fun getIconFile ()Ljava/lang/String;
+	public fun getId ()Ljava/lang/String;
+	public final fun getInline ()Ldev/droidtop/lib/plugins/ui/CatalogScreen;
+	public fun getProgress ()Ljava/lang/Float;
+	public fun getProgressLook ()Ldev/droidtop/lib/plugins/ui/JobLook;
+	public fun getProgressParts ()I
+	public final fun getRegistryId ()Ljava/lang/String;
+	public fun getStatusMark ()Ldev/droidtop/lib/plugins/ui/StatusMark;
+	public fun getSubtitle ()Ljava/lang/String;
+	public fun getSummaryShown ()Z
+	public fun getTitle ()Ljava/lang/String;
+	public fun getValue ()Ljava/lang/String;
+	public final fun getValueLabel ()Lkotlin/jvm/functions/Function1;
+	public final fun resolve (Lkotlin/jvm/functions/Function1;)Ldev/droidtop/lib/plugins/ui/CatalogScreen;
+}
+
+public final class dev/droidtop/lib/plugins/ui/Notice {
+	public static final field BODY_MAX I
+	public static final field Companion Ldev/droidtop/lib/plugins/ui/Notice$Companion;
+	public static final field INFO_ACTION Ljava/lang/String;
+	public static final field TITLE_MAX I
+	public fun <init> (Ldev/droidtop/lib/plugins/ui/NoticeTone;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ldev/droidtop/lib/plugins/ui/NoticeAction;Ljava/lang/String;)V
+	public synthetic fun <init> (Ldev/droidtop/lib/plugins/ui/NoticeTone;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ldev/droidtop/lib/plugins/ui/NoticeAction;Ljava/lang/String;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
+	public final fun aPress ()Ldev/droidtop/lib/plugins/ui/NoticePress;
+	public final fun accessibilityActions ()Ljava/util/List;
+	public final fun getAction ()Ldev/droidtop/lib/plugins/ui/NoticeAction;
+	public final fun getBody ()Ljava/lang/String;
+	public final fun getDetails ()Ljava/lang/String;
+	public final fun getRecommendation ()Ljava/lang/String;
+	public final fun getSource ()Ljava/lang/String;
+	public final fun getTitle ()Ljava/lang/String;
+	public final fun getTone ()Ldev/droidtop/lib/plugins/ui/NoticeTone;
+	public final fun spoken ()Ljava/lang/String;
+	public final fun takesFocus (Z)Z
+	public static synthetic fun takesFocus$default (Ldev/droidtop/lib/plugins/ui/Notice;ZILjava/lang/Object;)Z
+}
+
+public final class dev/droidtop/lib/plugins/ui/Notice$Companion {
+}
+
+public final class dev/droidtop/lib/plugins/ui/NoticeAction {
+	public fun <init> (Ljava/lang/String;Lkotlin/jvm/functions/Function2;)V
+	public final fun getLabel ()Ljava/lang/String;
+	public final fun getRun ()Lkotlin/jvm/functions/Function2;
+}
+
+public final class dev/droidtop/lib/plugins/ui/NoticeDialogs {
+	public static final field INSTANCE Ldev/droidtop/lib/plugins/ui/NoticeDialogs;
+	public final fun answer (Ldev/droidtop/lib/plugins/ui/NoticeDialogs$Request;Ldev/droidtop/lib/plugins/ui/ConfirmAnswer;)V
+	public final fun attachHost (Ljava/lang/Object;)V
+	public final fun awaitHost (JLkotlin/coroutines/Continuation;)Ljava/lang/Object;
+	public final fun confirm (Ldev/droidtop/lib/plugins/ui/Notice;Ljava/lang/String;Ljava/lang/String;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+	public static synthetic fun confirm$default (Ldev/droidtop/lib/plugins/ui/NoticeDialogs;Ldev/droidtop/lib/plugins/ui/Notice;Ljava/lang/String;Ljava/lang/String;Lkotlin/coroutines/Continuation;ILjava/lang/Object;)Ljava/lang/Object;
+	public final fun confirmDanger (Ldev/droidtop/lib/plugins/ui/DangerConfirm;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+	public final fun detachHost (Ljava/lang/Object;)V
+	public final fun drawsHere (Ljava/lang/Object;)Z
+	public final fun getHostTokens ()Lkotlinx/coroutines/flow/StateFlow;
+	public final fun getPending ()Lkotlinx/coroutines/flow/StateFlow;
+}
+
+public final class dev/droidtop/lib/plugins/ui/NoticeDialogs$Request {
+	public final fun getCancelLabel ()Ljava/lang/String;
+	public final fun getDanger ()Z
+	public final fun getItems ()Ljava/util/List;
+	public final fun getNotice ()Ldev/droidtop/lib/plugins/ui/Notice;
+	public final fun getProceedLabel ()Ljava/lang/String;
+}
+
+public final class dev/droidtop/lib/plugins/ui/NoticeItem : dev/droidtop/lib/plugins/ui/CatalogItem {
+	public fun <init> (Ljava/lang/String;Ldev/droidtop/lib/plugins/ui/Notice;Ldev/droidtop/lib/plugins/ui/NoticePlacement;Ldev/droidtop/lib/plugins/ui/CatalogScreen;)V
+	public synthetic fun <init> (Ljava/lang/String;Ldev/droidtop/lib/plugins/ui/Notice;Ldev/droidtop/lib/plugins/ui/NoticePlacement;Ldev/droidtop/lib/plugins/ui/CatalogScreen;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
+	public fun getChip ()Ldev/droidtop/lib/plugins/ui/RowTag;
+	public fun getIcon ()Ldev/droidtop/lib/plugins/ui/CatalogIcon;
+	public fun getIconFile ()Ljava/lang/String;
+	public fun getId ()Ljava/lang/String;
+	public final fun getNotice ()Ldev/droidtop/lib/plugins/ui/Notice;
+	public final fun getOpens ()Ldev/droidtop/lib/plugins/ui/CatalogScreen;
+	public final fun getPlacement ()Ldev/droidtop/lib/plugins/ui/NoticePlacement;
+	public fun getProgress ()Ljava/lang/Float;
+	public fun getProgressLook ()Ldev/droidtop/lib/plugins/ui/JobLook;
+	public fun getProgressParts ()I
+	public fun getStatusMark ()Ldev/droidtop/lib/plugins/ui/StatusMark;
+	public fun getSubtitle ()Ljava/lang/String;
+	public fun getSummaryShown ()Z
+	public fun getTitle ()Ljava/lang/String;
+	public fun getValue ()Ljava/lang/String;
+}
+
+public final class dev/droidtop/lib/plugins/ui/NoticeKt {
+	public static final fun getSpokenName (Ldev/droidtop/lib/plugins/ui/NoticeTone;)Ljava/lang/String;
+}
+
+public final class dev/droidtop/lib/plugins/ui/NoticePlacement : java/lang/Enum {
+	public static final field Group Ldev/droidtop/lib/plugins/ui/NoticePlacement;
+	public static final field Page Ldev/droidtop/lib/plugins/ui/NoticePlacement;
+	public static final field Row Ldev/droidtop/lib/plugins/ui/NoticePlacement;
+	public static fun getEntries ()Lkotlin/enums/EnumEntries;
+	public static fun valueOf (Ljava/lang/String;)Ldev/droidtop/lib/plugins/ui/NoticePlacement;
+	public static fun values ()[Ldev/droidtop/lib/plugins/ui/NoticePlacement;
+}
+
+public final class dev/droidtop/lib/plugins/ui/NoticePress : java/lang/Enum {
+	public static final field ACTION Ldev/droidtop/lib/plugins/ui/NoticePress;
+	public static final field INFO Ldev/droidtop/lib/plugins/ui/NoticePress;
+	public static final field NONE Ldev/droidtop/lib/plugins/ui/NoticePress;
+	public static fun getEntries ()Lkotlin/enums/EnumEntries;
+	public static fun valueOf (Ljava/lang/String;)Ldev/droidtop/lib/plugins/ui/NoticePress;
+	public static fun values ()[Ldev/droidtop/lib/plugins/ui/NoticePress;
+}
+
+public final class dev/droidtop/lib/plugins/ui/NoticeTone : java/lang/Enum {
+	public static final field Caution Ldev/droidtop/lib/plugins/ui/NoticeTone;
+	public static final field Danger Ldev/droidtop/lib/plugins/ui/NoticeTone;
+	public static final field Info Ldev/droidtop/lib/plugins/ui/NoticeTone;
+	public static fun getEntries ()Lkotlin/enums/EnumEntries;
+	public static fun valueOf (Ljava/lang/String;)Ldev/droidtop/lib/plugins/ui/NoticeTone;
+	public static fun values ()[Ldev/droidtop/lib/plugins/ui/NoticeTone;
+}
+
+public final class dev/droidtop/lib/plugins/ui/PageButton {
+	public fun <init> (Ljava/lang/String;Ljava/lang/String;Ldev/droidtop/lib/plugins/ui/ButtonRole;ZLjava/lang/String;Ldev/droidtop/lib/plugins/ui/CatalogIcon;Ljava/lang/String;Lkotlin/jvm/functions/Function1;)V
+	public synthetic fun <init> (Ljava/lang/String;Ljava/lang/String;Ldev/droidtop/lib/plugins/ui/ButtonRole;ZLjava/lang/String;Ldev/droidtop/lib/plugins/ui/CatalogIcon;Ljava/lang/String;Lkotlin/jvm/functions/Function1;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
+	public final fun getConfirmTitle ()Ljava/lang/String;
+	public final fun getDisabledReason ()Ljava/lang/String;
+	public final fun getEnabled ()Z
+	public final fun getIcon ()Ldev/droidtop/lib/plugins/ui/CatalogIcon;
+	public final fun getId ()Ljava/lang/String;
+	public final fun getLabel ()Ljava/lang/String;
+	public final fun getRole ()Ldev/droidtop/lib/plugins/ui/ButtonRole;
+	public final fun getRun ()Lkotlin/jvm/functions/Function1;
+	public final fun getShownLabel ()Ljava/lang/String;
+}
+
+public final class dev/droidtop/lib/plugins/ui/PageHeader {
+	public fun <init> (Ljava/lang/String;Ljava/lang/String;Ljava/util/List;Ldev/droidtop/lib/plugins/ui/CatalogIcon;Ljava/lang/String;)V
+	public synthetic fun <init> (Ljava/lang/String;Ljava/lang/String;Ljava/util/List;Ldev/droidtop/lib/plugins/ui/CatalogIcon;Ljava/lang/String;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
+	public final fun getByline ()Ljava/lang/String;
+	public final fun getChips ()Ljava/util/List;
+	public final fun getIcon ()Ldev/droidtop/lib/plugins/ui/CatalogIcon;
+	public final fun getImagePath ()Ljava/lang/String;
+	public final fun getTitle ()Ljava/lang/String;
+}
+
+public final class dev/droidtop/lib/plugins/ui/PageHeaderItem : dev/droidtop/lib/plugins/ui/CatalogItem {
+	public static final field Companion Ldev/droidtop/lib/plugins/ui/PageHeaderItem$Companion;
+	public static final field ID Ljava/lang/String;
+	public fun <init> (Ldev/droidtop/lib/plugins/ui/PageHeader;)V
+	public fun getChip ()Ldev/droidtop/lib/plugins/ui/RowTag;
+	public final fun getHeader ()Ldev/droidtop/lib/plugins/ui/PageHeader;
+	public fun getIcon ()Ldev/droidtop/lib/plugins/ui/CatalogIcon;
+	public fun getIconFile ()Ljava/lang/String;
+	public fun getId ()Ljava/lang/String;
+	public fun getProgress ()Ljava/lang/Float;
+	public fun getProgressLook ()Ldev/droidtop/lib/plugins/ui/JobLook;
+	public fun getProgressParts ()I
+	public fun getStatusMark ()Ldev/droidtop/lib/plugins/ui/StatusMark;
+	public fun getSubtitle ()Ljava/lang/String;
+	public fun getSummaryShown ()Z
+	public fun getTitle ()Ljava/lang/String;
+	public fun getValue ()Ljava/lang/String;
+}
+
+public final class dev/droidtop/lib/plugins/ui/PageHeaderItem$Companion {
+}
+
+public abstract class dev/droidtop/lib/plugins/ui/PlatformItem : dev/droidtop/lib/plugins/ui/CatalogItem {
+	public fun <init> ()V
+	public fun getChip ()Ldev/droidtop/lib/plugins/ui/RowTag;
+	public fun getConfirmText ()Ljava/lang/String;
+	public fun getIcon ()Ldev/droidtop/lib/plugins/ui/CatalogIcon;
+	public fun getIconFile ()Ljava/lang/String;
+	public fun getProgress ()Ljava/lang/Float;
+	public fun getProgressLook ()Ldev/droidtop/lib/plugins/ui/JobLook;
+	public fun getProgressParts ()I
+	public fun getStatusMark ()Ldev/droidtop/lib/plugins/ui/StatusMark;
+	public fun getSummaryShown ()Z
+	public fun getValue ()Ljava/lang/String;
+}
+
+public final class dev/droidtop/lib/plugins/ui/RowTag : java/lang/Enum {
+	public static final field ANTI_FEATURES Ldev/droidtop/lib/plugins/ui/RowTag;
+	public static final field SET_BY_THEME Ldev/droidtop/lib/plugins/ui/RowTag;
+	public static final field UNOFFICIAL Ldev/droidtop/lib/plugins/ui/RowTag;
+	public static fun getEntries ()Lkotlin/enums/EnumEntries;
+	public final fun getLabel ()Ljava/lang/String;
+	public static fun valueOf (Ljava/lang/String;)Ldev/droidtop/lib/plugins/ui/RowTag;
+	public static fun values ()[Ldev/droidtop/lib/plugins/ui/RowTag;
+}
+
+public final class dev/droidtop/lib/plugins/ui/SliderItem : dev/droidtop/lib/plugins/ui/CatalogItem {
+	public fun <init> (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;IIILkotlin/jvm/functions/Function2;)V
+	public synthetic fun <init> (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;IIILkotlin/jvm/functions/Function2;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
+	public fun getChip ()Ldev/droidtop/lib/plugins/ui/RowTag;
+	public final fun getCurrent ()I
+	public fun getIcon ()Ldev/droidtop/lib/plugins/ui/CatalogIcon;
+	public fun getIconFile ()Ljava/lang/String;
+	public fun getId ()Ljava/lang/String;
+	public final fun getMax ()I
+	public final fun getMin ()I
+	public final fun getOnChange ()Lkotlin/jvm/functions/Function2;
+	public fun getProgress ()Ljava/lang/Float;
+	public fun getProgressLook ()Ldev/droidtop/lib/plugins/ui/JobLook;
+	public fun getProgressParts ()I
+	public fun getStatusMark ()Ldev/droidtop/lib/plugins/ui/StatusMark;
+	public fun getSubtitle ()Ljava/lang/String;
+	public fun getSummaryShown ()Z
+	public fun getTitle ()Ljava/lang/String;
+	public fun getValue ()Ljava/lang/String;
+}
+
+public final class dev/droidtop/lib/plugins/ui/StatusMark : java/lang/Enum {
+	public static final field ATTENTION Ldev/droidtop/lib/plugins/ui/StatusMark;
+	public static final field ERROR Ldev/droidtop/lib/plugins/ui/StatusMark;
+	public static final field OFFLINE Ldev/droidtop/lib/plugins/ui/StatusMark;
+	public static final field SIGNED_IN Ldev/droidtop/lib/plugins/ui/StatusMark;
+	public static final field SIGNED_OUT Ldev/droidtop/lib/plugins/ui/StatusMark;
+	public static final field SYNCED Ldev/droidtop/lib/plugins/ui/StatusMark;
+	public static final field WORKING Ldev/droidtop/lib/plugins/ui/StatusMark;
+	public static fun getEntries ()Lkotlin/enums/EnumEntries;
+	public static fun valueOf (Ljava/lang/String;)Ldev/droidtop/lib/plugins/ui/StatusMark;
+	public static fun values ()[Ldev/droidtop/lib/plugins/ui/StatusMark;
+}
+
+public final class dev/droidtop/lib/plugins/ui/TextBlockItem : dev/droidtop/lib/plugins/ui/CatalogItem {
+	public fun <init> (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ZZ)V
+	public synthetic fun <init> (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ZZILkotlin/jvm/internal/DefaultConstructorMarker;)V
+	public final fun getBusy ()Z
+	public fun getChip ()Ldev/droidtop/lib/plugins/ui/RowTag;
+	public final fun getGate ()Ljava/lang/String;
+	public fun getIcon ()Ldev/droidtop/lib/plugins/ui/CatalogIcon;
+	public fun getIconFile ()Ljava/lang/String;
+	public fun getId ()Ljava/lang/String;
+	public final fun getLast ()Z
+	public fun getProgress ()Ljava/lang/Float;
+	public fun getProgressLook ()Ldev/droidtop/lib/plugins/ui/JobLook;
+	public fun getProgressParts ()I
+	public fun getStatusMark ()Ldev/droidtop/lib/plugins/ui/StatusMark;
+	public fun getSubtitle ()Ljava/lang/String;
+	public fun getSummaryShown ()Z
+	public final fun getText ()Ljava/lang/String;
+	public fun getTitle ()Ljava/lang/String;
+	public fun getValue ()Ljava/lang/String;
+}
+
+public final class dev/droidtop/lib/plugins/ui/TextInputItem : dev/droidtop/lib/plugins/ui/CatalogItem {
+	public fun <init> (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ZZZLkotlin/jvm/functions/Function3;)V
+	public synthetic fun <init> (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ZZZLkotlin/jvm/functions/Function3;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
+	public fun getChip ()Ldev/droidtop/lib/plugins/ui/RowTag;
+	public fun getIcon ()Ldev/droidtop/lib/plugins/ui/CatalogIcon;
+	public fun getIconFile ()Ljava/lang/String;
+	public fun getId ()Ljava/lang/String;
+	public final fun getMultiline ()Z
+	public final fun getOnChange ()Lkotlin/jvm/functions/Function3;
+	public fun getProgress ()Ljava/lang/Float;
+	public fun getProgressLook ()Ldev/droidtop/lib/plugins/ui/JobLook;
+	public fun getProgressParts ()I
+	public final fun getSearch ()Z
+	public final fun getSecret ()Z
+	public fun getStatusMark ()Ldev/droidtop/lib/plugins/ui/StatusMark;
+	public fun getSubtitle ()Ljava/lang/String;
+	public fun getSummaryShown ()Z
+	public fun getTitle ()Ljava/lang/String;
+	public fun getValue ()Ljava/lang/String;
+}
+
+public final class dev/droidtop/lib/plugins/ui/ToggleItem : dev/droidtop/lib/plugins/ui/CatalogItem {
+	public fun <init> (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ZLkotlin/jvm/functions/Function3;)V
+	public synthetic fun <init> (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ZLkotlin/jvm/functions/Function3;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
+	public fun getChip ()Ldev/droidtop/lib/plugins/ui/RowTag;
+	public final fun getCurrent ()Z
+	public fun getIcon ()Ldev/droidtop/lib/plugins/ui/CatalogIcon;
+	public fun getIconFile ()Ljava/lang/String;
+	public fun getId ()Ljava/lang/String;
+	public final fun getOnToggle ()Lkotlin/jvm/functions/Function3;
+	public fun getProgress ()Ljava/lang/Float;
+	public fun getProgressLook ()Ldev/droidtop/lib/plugins/ui/JobLook;
+	public fun getProgressParts ()I
+	public fun getStatusMark ()Ldev/droidtop/lib/plugins/ui/StatusMark;
+	public fun getSubtitle ()Ljava/lang/String;
+	public fun getSummaryShown ()Z
+	public fun getTitle ()Ljava/lang/String;
+	public fun getValue ()Ljava/lang/String;
+}
+
