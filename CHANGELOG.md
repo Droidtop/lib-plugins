@@ -3,6 +3,14 @@
 All notable changes to lib-plugins. Versions follow [Semantic Versioning](https://semver.org/)
 (0.x releases may change anything).
 
+## [0.2.0]
+
+### Added
+- `android/aidl`: the plugin host's Android interface (`IPluginRuntime`, `IPluginRuntimeCallback`,
+  `IPluginHostBroker`, `IAppInterfaceDoor`, package `dev.droidtop.pluginhost`), which droidtop and Enginehost each
+  copied by hand and whose copies had drifted (Enginehost's `IPluginRuntime` still described contract 1). droidtop's
+  current files, moved unchanged; CI compiles them with the SDK's `aidl`. Droidtop/tracker#867 step 1.
+
 ## [0.1.3]
 
 ### Changed

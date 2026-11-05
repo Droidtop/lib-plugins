@@ -3,11 +3,13 @@
 Plugins: their manifests, grants and hosts. One of the shared library families of Droidtop/tracker#867: the libraries belong to no program;
 each program has its own scaffold and pins a tagged release of each library it uses (#867 D2).
 
-| Crate | Where | Holds |
+| Part | Where | Holds |
 |---|---|---|
 | `plugins-contexts` | [`crates/contexts`](crates/contexts) | context adapters: the programs plugins publish to sync their supporting state, offered, approved, installed and run |
+| AIDL (Android only) | [`android/aidl`](android/README.md) | the plugin host's Android interface: `IPluginRuntime`, `IPluginRuntimeCallback`, `IPluginHostBroker`, `IAppInterfaceDoor` |
 
-Used by: droidtop-agent (and through it droidtop).
+Used by: droidtop-agent (and through it droidtop) for the crate; droidtop and Enginehost for the AIDL, once each
+moves its copy onto this one.
 
 Licence: GPL-3.0-only (see `LICENSE`).
 

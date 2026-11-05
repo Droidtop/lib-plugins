@@ -47,6 +47,24 @@ jobs:
         if: success() || failure()
         run: cargo test --workspace --no-fail-fast
 
+  # The plugin host's Android interface (android/aidl) compiles with the SDK's aidl tool, as an app's build would.
+  aidl:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+        with:
+          persist-credentials: false
+      - name: Compile every AIDL file
+        run: |
+          set -eu
+          aidl="$(ls -d "$ANDROID_HOME"/build-tools/*/aidl | sort -V | tail -1)"
+          # The framework's parcelables (KeyEvent, MotionEvent, Surface), as an app's build passes them.
+          framework="$(ls -d "$ANDROID_HOME"/platforms/android-*/framework.aidl | sort -V | tail -1)"
+          echo "aidl: $aidl; framework: $framework"
+          out="$(mktemp -d)"
+          find android/aidl -name '*.aidl' -print0 | xargs -0 -n1 "$aidl" -p"$framework" -Iandroid/aidl -o"$out"
+          find "$out" -name '*.java' | sort
+
   # droidtop-agent's main, with lib-plugins taken from this commit instead of its pinned tag.
   droidtop-agent:
     runs-on: ubuntu-24.04
@@ -95,7 +113,7 @@ jobs:
   # in the root Cargo.toml (and the CHANGELOG) in the change that needs it.
   release:
     if: github.event_name == 'push' && github.ref == 'refs/heads/main'
-    needs: [test, droidtop-agent]
+    needs: [test, aidl, droidtop-agent]
     runs-on: ubuntu-24.04
     permissions:
       contents: write
