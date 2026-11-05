@@ -3,11 +3,13 @@
 Plugins: their manifests, grants and hosts. One of the shared library families of Droidtop/tracker#867: the libraries belong to no program;
 each program has its own scaffold and pins a tagged release of each library it uses (#867 D2).
 
-| Crate | Where | Holds |
+| Part | Where | Holds |
 |---|---|---|
 | `plugins-contexts` | [`crates/contexts`](crates/contexts) | context adapters: the programs plugins publish to sync their supporting state, offered, approved, installed and run |
+| AIDL (Android only) | [`android/aidl`](android/README.md) | the plugin host's Android interface: `IPluginRuntime`, `IPluginRuntimeCallback`, `IPluginHostBroker`, `IAppInterfaceDoor` |
 
-Used by: droidtop-agent (and through it droidtop).
+Used by: droidtop-agent (and through it droidtop) for the crate; droidtop and Enginehost for the AIDL, once each
+moves its copy onto this one.
 
 Licence: GPL-3.0-only (see `LICENSE`).
 
@@ -33,6 +35,11 @@ program that uses this library against the commit (#867 D2). Work lands on `main
 once CI is green.
 
 ## Versions
+
+**The interface stays compatible within a version** (Droidtop/tracker#867, owner 2026-11-04: "I should be able to
+bump the version number and immediately get the benefit"). A program takes a fix by moving its pin, with no change
+to its own code. CI's `semver` job runs `cargo-semver-checks` against the last release: a breaking change fails unless
+the version says so (in 0.x, a new minor version) and the CHANGELOG says what broke and what a program changes.
 
 A release is a tag `vX.Y.Z`. CI creates it on a green `main` whose root `Cargo.toml` names a version not
 yet tagged, so to release, raise that version (and the CHANGELOG) in the change that needs it. Programs,

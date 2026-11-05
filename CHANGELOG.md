@@ -1,13 +1,25 @@
 # Changelog
 
 All notable changes to lib-plugins. Versions follow [Semantic Versioning](https://semver.org/)
-(0.x releases may change anything).
+(in 0.x, only a new minor version may break the interface; CI's `semver` job enforces it).
 
-## [0.1.4]
+## [0.2.1]
+
+### Added
+- CI's `semver` job: `cargo-semver-checks` against the last release, so a breaking change fails unless its version and
+  this CHANGELOG say so (Droidtop/tracker#867).
 
 ### Changed
-- Built on lib-sync v0.1.2 (cross-store links, Droidtop/tracker#798), so droidtop-agent can take lib-sync v0.1.2 and
-  link one sync-core. Nothing else changed.
+- `plugins-contexts`: built on lib-sync v0.1.2 (cross-store links, Droidtop/tracker#798), so droidtop-agent can take
+  lib-sync v0.1.2 and link one sync-core.
+
+## [0.2.0]
+
+### Added
+- `android/aidl`: the plugin host's Android interface (`IPluginRuntime`, `IPluginRuntimeCallback`,
+  `IPluginHostBroker`, `IAppInterfaceDoor`, package `dev.droidtop.pluginhost`), which droidtop and Enginehost each
+  copied by hand and whose copies had drifted (Enginehost's `IPluginRuntime` still described contract 1). droidtop's
+  current files, moved unchanged; CI compiles them with the SDK's `aidl`. Droidtop/tracker#867 step 1.
 
 ## [0.1.3]
 
