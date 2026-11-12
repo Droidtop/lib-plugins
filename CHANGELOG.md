@@ -5,6 +5,13 @@ All notable changes to lib-plugins. Versions follow [Semantic Versioning](https:
 
 ## [Unreleased]
 
+## [0.3.0]
+
+### Changed
+- Pins lib-sync v0.2.0 (was v0.1.6). plugins-contexts re-exports sync-core's `valid_context` as `valid_id`, so this is
+  a new minor version. droidtop, droidtop-agent, lib-games and lib-saves move to lib-sync 0.2 together
+  (Droidtop/tracker#573).
+
 ## [0.2.3]
 
 ### Added
